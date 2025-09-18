@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Food Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f3f3; /* pastel pink */
+            padding: 0;
+        }
+        .container {
+            border: 2px solid #444;
+            padding: 15px;
+            margin: 0 auto;
+            max-width: 1000px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+            color: #444;
+        }
+        hotel-image {
+        <img src="hotel.jpg" alt="hotel.jpg">
+            
+        }
+        .about {
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        .about h3 {
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .menu {
+            margin-top: 20px;
+        }
+        .menu h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .category {
+            margin-top: 15px;
+        }
+        .category strong {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #333;
+        }
+        .category label {
+            display: block;
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+        .total-bill {
+            margin-top: 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1.3em;
+        }
+        /* Make it mobile-friendly */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .hotel-image {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Billing - Food Menu</h1>
+        <div class="hotel-image">Hotel Image</div>
+    </div>
+
+    <div class="about">
+        <h3>About Hotel</h3>
+        <p><i>Welcome to our cozy hotel where taste meets tradition.</i> Enjoy our variety of dishes made with love and care.</p>
+    </div>
+
+    <div class="menu">
+        <h3>Menu</h3>
+
+        <div class="category">
+            <strong>Indian</strong>
+            <label><input type="checkbox"> Dal Tadka - ₹50</label>
+            <label><input type="checkbox"> Dosa - ₹70</label>
+            <label><input type="checkbox"> Biryani - ₹150</label>
+        </div>
+
+        <div class="category">
+            <strong>Italian</strong>
+            <label><input type="checkbox"> Pasta - ₹100</label>
+            <label><input type="checkbox"> Tiramisu - ₹200</label>
+            <label><input type="checkbox"> Pizza - ₹200</label>
+        </div>
+
+        <div class="category">
+            <strong>Chinese</strong>
+            <label><input type="checkbox"> Fried Rice - ₹100</label>
+            <label><input type="checkbox"> Dumplings - ₹120</label>
+            <label><input type="checkbox"> Noodles - ₹100</label>
+        </div>
+    </div>
+
+    <div class="total-bill">
+        Total Bill: ₹150
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header section */
+header {
+  background-color: #54b8dd;
+  color: rgb(11, 15, 15);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.affln {
+  text-align: left;
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgb(169, 206, 99);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.menu li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.menu a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: rgb(236, 195, 90);
+}
+
+/* Dropdown submenu */
+.dept_submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: cornflowerblue;
+  z-index: 2;
+  list-style: none;
+  min-width: 200px;
+}
+
+.dept_submenu li a {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.submenu:hover .dept_submenu {
+  display: block;
+}
+
+/* Footer styles */
+footer {
+  background-color: rgb(172, 154, 196);
+  text-align: center;
+  padding: 1rem;
+  color: rgb(17, 17, 12);
+}
+
+/* Heading styles */
+h1 {
+  color: rgba(83, 56, 123, 0.884);
+  padding: 1rem;
+}
